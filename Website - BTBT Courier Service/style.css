@@ -1,0 +1,131 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F2D2BD;
+  }
+  
+  header {
+    background-color: #E97451;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  #logo {
+    height: 50px;
+    margin-right: 20px;
+  }
+  
+  .header-content {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #cccccc;
+  }
+  
+  .section {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .error {
+    color: red;
+    font-weight: bold;
+    display: block;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #007bff;  /* Consider changing this color to match the new theme */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;  /* Consider changing this color to match the new theme */
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="date"],
+  input[type="month"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .header-content {
+      order: 2;
+    }
+  
+    #logo {
+      margin-bottom: 20px;
+    }
+  
+    nav ul li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    nav ul li a {
+      padding: 10px;
+    }
+  
+    .section {
+      margin: 5px;
+      padding: 15px;
+    }
+  
+    button,
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    input[type="month"] {
+      width: 100%;
+    }
+  }
+  
